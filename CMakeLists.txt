@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(img-to-ascii LANGUAGES CXX)
+project(image-converter LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
-add_executable(img-to-ascii
+add_executable(image-converter
   main.cpp
   converter.cpp converter.h
   imageReader.cpp imageReader.h
@@ -20,4 +20,4 @@ add_executable(img-to-ascii
   cell.cpp cell.h
 )
 
-target_link_libraries(img-to-ascii)
+target_link_libraries(image-converter )
